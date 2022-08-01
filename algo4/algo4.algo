@@ -29,7 +29,7 @@ BEGIN
     END_WHILE
 
 END
-//jas//
+js//
 
 const tab=[5,3,8,7,9]
 function cards_sorting(){
