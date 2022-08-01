@@ -1,0 +1,53 @@
+PROCEDURE swap(VAR arr,arr1:INTEGER )
+VAR
+    temp:INTEGER
+BEGIN
+    temp=arr
+    arr=arr1
+    arr1=temp
+
+END
+//----------------------------------------------------------------
+ALGORITHM cards sorting
+VAR
+    i,j,n:INTEGER:=0
+    tab : ARRAY_OF INTEGER[n];
+
+BEGIN
+    Write("type the maximum  number of  cards in your hand ")
+    Read(n)
+    WHILE (j<n-1) DO
+    WHILE (i<n-1) DO
+    Write("type the next element") 
+    Read(tab[i])
+    IF (tab[i]>tab[i+1]) THEN
+        swap(tab[i],tab[i+1])
+    END_IF
+    i++
+    END_WHILE
+    j++
+    END_WHILE
+
+END
+w hetha el javascript
+const tab=[5,3,8,7,9]
+function cards_sorting(){
+var temp=0
+var n=tab.length
+for (var j=0; j<n-1;j++){
+    for (var i=0; i<n-1;i++){
+        if(tab[i]>tab[i+1]){
+            //swap(tab[i],tab[i+1])
+            temp= tab[i];
+            tab[i] = tab[i+1];
+            tab[i+1] = temp;
+           // solution 2 : [tab[i],tab[i+1]]=[tab[i+1],tab[i]]
+
+        }
+
+}
+
+}
+return tab
+}
+console.log(cards_sorting())
