@@ -29,7 +29,8 @@ BEGIN
     END_WHILE
 
 END
-w hetha el javascript
+//jas//
+
 const tab=[5,3,8,7,9]
 function cards_sorting(){
 var temp=0
